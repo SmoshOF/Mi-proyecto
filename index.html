@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi CV Interactivo</title>
+<title>Acerca de mi</title>
 
 <style>
 *{
@@ -71,6 +71,13 @@ header h1{
     margin-bottom:10px;
 }
 
+.card-image{
+    width:150px;
+    display:block;
+    margin:10px auto 30px auto;
+    border-radius:50%;
+}
+
 @media(max-width:768px){
     .main-container{
         flex-direction:column;
@@ -88,33 +95,41 @@ header h1{
 
 <div class="main-container">
 
+    <!-- Datos Personales -->
     <div class="card">
       <a href="datos.html">
         <h2>Datos Personales</h2>
         <p>Presiona para ver más</p>
       </a>
     </div>
+    <img src="images/avatar.png" alt="Avatar Datos" class="card-image">
 
+    <!-- Idiomas -->
     <div class="card">
       <a href="idiomas.html">
         <h2>Idiomas</h2>
         <p>Presiona para ver más</p>
       </a>
     </div>
+    <img src="images/idiomas.png" alt="Avatar Idiomas" class="card-image">
 
+    <!-- Cualidades -->
     <div class="card">
       <a href="cualidades.html">
         <h2>Cualidades</h2>
         <p>Presiona para ver más</p>
       </a>
     </div>
+    <img src="images/cualidades.png" alt="Avatar Cualidades" class="card-image">
 
+    <!-- Proyecciones -->
     <div class="card">
       <a href="proyecciones.html">
         <h2>Proyecciones</h2>
         <p>Presiona para ver más</p>
       </a>
     </div>
+    <img src="images/proyecciones.png" alt="Avatar Proyecciones" class="card-image">
 
 </div>
 
