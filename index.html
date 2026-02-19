@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículum - Tu Nombre</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color:white;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 300px 1fr;
+    max-width:1000px;
+    width:100%;
+    background:rgba(255,255,255,0.08);
+    border-radius:20px;
+    overflow:hidden;
+    backdrop-filter: blur(10px);
+}
+
+/* LADO IZQUIERDO */
+.sidebar{
+    background:rgba(0,0,0,0.3);
+    padding:30px;
+    text-align:center;
+}
+
+.sidebar img{
+    width:150px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+.sidebar h2{
+    margin-bottom:10px;
+}
+
+.sidebar p{
+    font-size:14px;
+    margin:5px 0;
+}
+
+/* LADO DERECHO */
+.content{
+    padding:40px;
+}
+
+.section{
+    margin-bottom:30px;
+}
+
+.section h3{
+    border-bottom:2px solid #00f7ff;
+    padding-bottom:5px;
+    margin-bottom:15px;
+}
+
+.section p{
+    margin-bottom:10px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:5px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .container{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LADO IZQUIERDO -->
+    <div class="sidebar">
+        <img src="https://via.placeholder.com/150" alt="Tu foto">
+        <h2>Tu Nombre Completo</h2>
+        <p>Email: tuemail@email.com</p>
+        <p>Teléfono: 000000000</p>
+        <p>Ubicación: Tu ciudad</p>
+
+        <div class="section">
+            <h3>Idiomas</h3>
+            <p>Español: Nativo</p>
+            <p>Inglés: Intermedio</p>
+        </div>
+    </div>
+
+    <!-- LADO DERECHO -->
+    <div class="content">
+
+        <div class="section">
+            <h3>Perfil Profesional</h3>
+            <p>Estudiante universitario en primer semestre con interés en el desarrollo web y la tecnología.</p>
+        </div>
+
+        <div class="section">
+            <h3>Experiencia Laboral</h3>
+            <p><strong>Trabajo 1</strong> - Descripción breve de lo que hacías.</p>
+            <p><strong>Trabajo 2</strong> - Otra experiencia importante.</p>
+        </div>
+
+        <div class="section">
+            <h3>Educación</h3>
+            <p>Universidad - Carrera - Año actual</p>
+        </div>
+
+        <div class="section">
+            <h3>Cualidades</h3>
+            <ul>
+                <li>Responsable</li>
+                <li>Trabajo en equipo</li>
+                <li>Aprendo rápido</li>
+                <li>Comprometido</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Proyecciones</h3>
+            <p>Desarrollarme profesionalmente en el área tecnológica y convertirme en desarrollador web.</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
