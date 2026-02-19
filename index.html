@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Página Personal</title>
+<title>Mi Página</title>
 
 <style>
 *{
@@ -14,62 +14,60 @@
 }
 
 body{
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background: linear-gradient(135deg, #141e30, #243b55);
     color:white;
 }
 
 header{
-    padding:30px 15px;
+    padding:40px;
     text-align:center;
-    background: rgba(0,0,0,0.4);
 }
 
 header h1{
-    font-size:28px;
+    font-size:40px;
 }
 
-nav{
+main{
+    flex:1;
     display:flex;
     justify-content:center;
-    flex-wrap:wrap;
-    gap:10px;
-    padding:15px;
-}
-
-nav a{
-    background: rgba(0,0,0,0.4);
-    padding:8px 15px;
-    border-radius:20px;
-    text-decoration:none;
-    color:white;
-    font-size:14px;
-}
-
-section{
-    padding:25px 15px;
+    align-items:center;
+    text-align:center;
+    padding:40px;
 }
 
 .card{
-    background: rgba(0,0,0,0.4);
-    padding:20px;
-    border-radius:15px;
-    margin-bottom:20px;
+    background:rgba(255,255,255,0.1);
+    padding:40px;
+    border-radius:20px;
+    max-width:600px;
+    width:100%;
+    backdrop-filter: blur(10px);
 }
 
 button{
-    margin-top:10px;
-    padding:10px 20px;
+    margin-top:20px;
+    padding:12px 25px;
     border:none;
-    border-radius:20px;
+    border-radius:30px;
     background:#00f7ff;
     font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:white;
+    color:black;
 }
 
 footer{
     text-align:center;
-    padding:15px;
-    background: rgba(0,0,0,0.4);
-    font-size:12px;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
 }
 </style>
 </head>
@@ -77,39 +75,19 @@ footer{
 <body>
 
 <header>
-    <h1>Hola, soy Sebastián 🚀</h1>
-    <p>Bienvenido a mi página web</p>
+    <h1>Bienvenido a mi página 🚀</h1>
 </header>
 
-<nav>
-    <a href="#sobre">Sobre mí</a>
-    <a href="#proyectos">Proyectos</a>
-    <a href="#contacto">Contacto</a>
-</nav>
-
-<section id="sobre">
+<main>
     <div class="card">
         <h2>Sobre mí</h2>
-        <p>Estoy aprendiendo programación y desarrollo web. Esta es mi página en GitHub.</p>
+        <p>Esta página ahora ocupa toda la pantalla en PC y se adapta también a celular.</p>
+        <button onclick="alert('Funciona 😎')">Haz clic</button>
     </div>
-</section>
-
-<section id="proyectos">
-    <div class="card">
-        <h2>Proyectos</h2>
-        <button onclick="alert('Próximamente 😎')">Ver más</button>
-    </div>
-</section>
-
-<section id="contacto">
-    <div class="card">
-        <h2>Contacto</h2>
-        <p>Email: tuemail@email.com</p>
-    </div>
-</section>
+</main>
 
 <footer>
-    <p>© 2026 - Mi Página</p>
+    <p>© 2026 - smoshof</p>
 </footer>
 
 </body>
