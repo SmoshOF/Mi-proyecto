@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Currículum - Tu Nombre</title>
+<title>Mi CV Interactivo</title>
 
 <style>
 *{
@@ -14,79 +14,81 @@
 }
 
 body{
-    background: linear-gradient(135deg, #141e30, #243b55);
-    color:white;
     min-height:100vh;
+    background: linear-gradient(135deg, #0f111a, #1c1f2a);
+    color:white;
     display:flex;
-    justify-content:center;
+    flex-direction:column;
     align-items:center;
     padding:40px 20px;
 }
 
-.container{
-    display:grid;
-    grid-template-columns: 300px 1fr;
-    max-width:1000px;
-    width:100%;
-    background:rgba(255,255,255,0.08);
-    border-radius:20px;
-    overflow:hidden;
-    backdrop-filter: blur(10px);
-}
-
-/* LADO IZQUIERDO */
-.sidebar{
-    background:rgba(0,0,0,0.3);
-    padding:30px;
+/* HEADER */
+header{
     text-align:center;
+    margin-bottom:40px;
 }
 
-.sidebar img{
-    width:150px;
-    border-radius:50%;
-    margin-bottom:20px;
+header h1{
+    font-size:36px;
+    color:#00f7ff;
 }
 
-.sidebar h2{
+/* CONTENEDOR DE TARJETAS */
+.main-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    width:100%;
+    max-width:1200px;
+}
+
+/* TARJETAS INTERACTIVAS */
+.card{
+    background: rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:20px;
+    width:250px;
+    text-align:center;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+    background: #00f7ff;
+    color:black;
+    transform: translateY(-5px);
+}
+
+.card h2{
     margin-bottom:10px;
 }
 
-.sidebar p{
-    font-size:14px;
-    margin:5px 0;
+/* BOTONES OPCIONALES */
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    background:#00f7ff;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    margin-top:10px;
 }
 
-/* LADO DERECHO */
-.content{
-    padding:40px;
-}
-
-.section{
-    margin-bottom:30px;
-}
-
-.section h3{
-    border-bottom:2px solid #00f7ff;
-    padding-bottom:5px;
-    margin-bottom:15px;
-}
-
-.section p{
-    margin-bottom:10px;
-}
-
-ul{
-    padding-left:20px;
-}
-
-li{
-    margin-bottom:5px;
+button:hover{
+    background:white;
+    color:black;
 }
 
 /* RESPONSIVE */
 @media(max-width:768px){
-    .container{
-        grid-template-columns:1fr;
+    .main-container{
+        flex-direction:column;
+        align-items:center;
     }
 }
 </style>
@@ -94,57 +96,40 @@ li{
 
 <body>
 
-<div class="container">
+<header>
+    <h1>Mi CV Interactivo 🚀</h1>
+</header>
 
-    <!-- LADO IZQUIERDO -->
-    <div class="sidebar">
-        <img src="https://via.placeholder.com/150" alt="Tu foto">
-        <h2>Tu Nombre Completo</h2>
-        <p>Email: tuemail@email.com</p>
-        <p>Teléfono: 000000000</p>
-        <p>Ubicación: Tu ciudad</p>
+<div class="main-container">
 
-        <div class="section">
-            <h3>Idiomas</h3>
-            <p>Español: Nativo</p>
-            <p>Inglés: Intermedio</p>
-        </div>
+    <!-- TARJETA DATOS PERSONALES -->
+    <div class="card" onclick="alert('Nombre: Juan Pérez\nEmail: juan@email.com\nTeléfono: 000000000')">
+        <h2>Datos Personales</h2>
+        <p>Presiona para ver más</p>
     </div>
 
-    <!-- LADO DERECHO -->
-    <div class="content">
+    <!-- TARJETA IDIOMAS -->
+    <div class="card" onclick="alert('Español: Nativo\nInglés: Básico (en proceso de mejora)')">
+        <h2>Idiomas</h2>
+        <p>Presiona para ver más</p>
+    </div>
 
-        <div class="section">
-            <h3>Perfil Profesional</h3>
-            <p>Estudiante universitario en primer semestre con interés en el desarrollo web y la tecnología.</p>
-        </div>
+    <!-- TARJETA EXPERIENCIA -->
+    <div class="card" onclick="alert('Trabajo 1: Descripción breve\nTrabajo 2: Otra experiencia')">
+        <h2>Experiencia</h2>
+        <p>Presiona para ver más</p>
+    </div>
 
-        <div class="section">
-            <h3>Experiencia Laboral</h3>
-            <p><strong>Trabajo 1</strong> - Descripción breve de lo que hacías.</p>
-            <p><strong>Trabajo 2</strong> - Otra experiencia importante.</p>
-        </div>
+    <!-- TARJETA PROYECCIONES -->
+    <div class="card" onclick="alert('Proyección: Convertirme en desarrollador web y aprender más tecnologías')">
+        <h2>Proyecciones</h2>
+        <p>Presiona para ver más</p>
+    </div>
 
-        <div class="section">
-            <h3>Educación</h3>
-            <p>Universidad - Carrera - Año actual</p>
-        </div>
-
-        <div class="section">
-            <h3>Cualidades</h3>
-            <ul>
-                <li>Responsable</li>
-                <li>Trabajo en equipo</li>
-                <li>Aprendo rápido</li>
-                <li>Comprometido</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>Proyecciones</h3>
-            <p>Desarrollarme profesionalmente en el área tecnológica y convertirme en desarrollador web.</p>
-        </div>
-
+    <!-- TARJETA CUALIDADES -->
+    <div class="card" onclick="alert('Responsable\nAprendo rápido\nTrabajo en equipo\nComprometido')">
+        <h2>Cualidades</h2>
+        <p>Presiona para ver más</p>
     </div>
 
 </div>
