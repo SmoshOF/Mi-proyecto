@@ -23,7 +23,6 @@ body{
     padding:40px 20px;
 }
 
-/* HEADER */
 header{
     text-align:center;
     margin-bottom:40px;
@@ -34,7 +33,6 @@ header h1{
     color:#00f7ff;
 }
 
-/* CONTENEDOR DE TARJETAS */
 .main-container{
     display:flex;
     flex-wrap:wrap;
@@ -44,7 +42,6 @@ header h1{
     max-width:1200px;
 }
 
-/* TARJETAS INTERACTIVAS */
 .card{
     background: rgba(255,255,255,0.05);
     padding:30px;
@@ -62,29 +59,18 @@ header h1{
     transform: translateY(-5px);
 }
 
+.card a{
+    color: inherit;
+    text-decoration: none;
+    display:block;
+    height:100%;
+    width:100%;
+}
+
 .card h2{
     margin-bottom:10px;
 }
 
-/* BOTONES OPCIONALES */
-button{
-    padding:10px 20px;
-    border:none;
-    border-radius:20px;
-    background:#00f7ff;
-    color:black;
-    font-weight:bold;
-    cursor:pointer;
-    transition:0.3s;
-    margin-top:10px;
-}
-
-button:hover{
-    background:white;
-    color:black;
-}
-
-/* RESPONSIVE */
 @media(max-width:768px){
     .main-container{
         flex-direction:column;
@@ -102,34 +88,32 @@ button:hover{
 
 <div class="main-container">
 
-    <!-- TARJETA DATOS PERSONALES -->
-    <div class="card" onclick="alert('Nombre: Juan Pérez\nEmail: juan@email.com\nTeléfono: 000000000')">
+    <div class="card">
+      <a href="primero.html">
+        <h2>Primer Semestre</h2>
+        <p>Presiona para ver más</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="datos.html">
         <h2>Datos Personales</h2>
         <p>Presiona para ver más</p>
+      </a>
     </div>
 
-    <!-- TARJETA IDIOMAS -->
-    <div class="card" onclick="alert('Español: Nativo\nInglés: Básico (en proceso de mejora)')">
+    <div class="card">
+      <a href="idiomas.html">
         <h2>Idiomas</h2>
         <p>Presiona para ver más</p>
+      </a>
     </div>
 
-    <!-- TARJETA EXPERIENCIA -->
-    <div class="card" onclick="alert('Trabajo 1: Descripción breve\nTrabajo 2: Otra experiencia')">
-        <h2>Experiencia</h2>
-        <p>Presiona para ver más</p>
-    </div>
-
-    <!-- TARJETA PROYECCIONES -->
-    <div class="card" onclick="alert('Proyección: Convertirme en desarrollador web y aprender más tecnologías')">
-        <h2>Proyecciones</h2>
-        <p>Presiona para ver más</p>
-    </div>
-
-    <!-- TARJETA CUALIDADES -->
-    <div class="card" onclick="alert('Responsable\nAprendo rápido\nTrabajo en equipo\nComprometido')">
+    <div class="card">
+      <a href="cualidades.html">
         <h2>Cualidades</h2>
         <p>Presiona para ver más</p>
+      </a>
     </div>
 
 </div>
