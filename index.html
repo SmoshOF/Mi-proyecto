@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Página Personal</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color:white;
+}
+
+header{
+    padding:30px 15px;
+    text-align:center;
+    background: rgba(0,0,0,0.4);
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    padding:15px;
+}
+
+nav a{
+    background: rgba(0,0,0,0.4);
+    padding:8px 15px;
+    border-radius:20px;
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+}
+
+section{
+    padding:25px 15px;
+}
+
+.card{
+    background: rgba(0,0,0,0.4);
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+button{
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    background:#00f7ff;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    background: rgba(0,0,0,0.4);
+    font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Hola, soy Sebastián 🚀</h1>
+    <p>Bienvenido a mi página web</p>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="sobre">
+    <div class="card">
+        <h2>Sobre mí</h2>
+        <p>Estoy aprendiendo programación y desarrollo web. Esta es mi página en GitHub.</p>
+    </div>
+</section>
+
+<section id="proyectos">
+    <div class="card">
+        <h2>Proyectos</h2>
+        <button onclick="alert('Próximamente 😎')">Ver más</button>
+    </div>
+</section>
+
+<section id="contacto">
+    <div class="card">
+        <h2>Contacto</h2>
+        <p>Email: tuemail@email.com</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Mi Página</p>
+</footer>
+
+</body>
+</html>
