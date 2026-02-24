@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Datos Personales</title>
+
 <style>
 body{
     background: linear-gradient(135deg, #0f111a, #1c1f2a);
@@ -11,39 +12,69 @@ body{
     font-family: Arial, sans-serif;
     padding:40px;
 }
+
 .container{
     background: rgba(255,255,255,0.05);
     padding:40px;
     border-radius:20px;
     max-width:600px;
     margin:auto;
+    text-align:center;
 }
+
 h1{
     color:#00f7ff;
-    text-align:center;
-    margin-bottom:30px;
+    margin-bottom:20px;
 }
+
+/* FOTO */
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:25px;
+    border:3px solid #00f7ff;
+    box-shadow:0 0 20px rgba(0,247,255,0.4);
+}
+
+p{
+    margin:10px 0;
+}
+
 a{
     color:#00f7ff;
     text-decoration:none;
 }
+
 a:hover{
     text-decoration:underline;
 }
 </style>
 </head>
+
 <body>
+
 <div class="container">
+
 <h1>Datos Personales</h1>
+
+<!-- FOTO -->
+<img src="images/perfil.jpg" alt="Foto de perfil" class="profile-img">
+
 <p><strong>Nombre:</strong> Jhohan Sebastian Barral Mamani</p>
 <p><strong>Email:</strong> xosixo4728@gmail.com</p>
 <p><strong>Teléfono:</strong> 63515803</p>
-<p><strong>Lugar de nacimiento:</strong>Santa Cruz, Bolivia</p>
+<p><strong>Lugar de nacimiento:</strong> Santa Cruz, Bolivia</p>
 <p><strong>Ubicación:</strong> Sucre, Bolivia</p>
 <p><strong>Colegio:</strong> Guido Villagomez "B"</p>
 <p><strong>Año de graduación:</strong> 2025</p>
-<p><strong>Trabajo</strong> Músico en banda</p>
+<p><strong>Trabajo:</strong> Músico en banda</p>
+
+<br>
 <p><a href="index.html">⬅ Volver</a></p>
+
 </div>
+
 </body>
 </html>
