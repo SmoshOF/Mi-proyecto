@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profundiza tus conocimientos</title>
+<title>Acerca de mi</title>
 
 <style>
 *{
@@ -30,20 +30,15 @@ header h1{
     color:#00f7ff;
 }
 
-header p{
-    margin-top:10px;
-    color:#aaa;
-}
-
-/* Grid fijo de 2 filas x 2 columnas */
+/* Grid adaptable (2 columnas, tantas filas como hagan falta) */
 .grid-container{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
     gap:40px;
     width:100%;
     max-width:1200px;
     margin:0 auto;
+    grid-auto-rows:auto;
 }
 
 /* Cada bloque tarjeta + imagen */
@@ -54,12 +49,10 @@ header p{
     overflow:hidden;
     box-shadow: 0 0 15px rgba(0,0,0,0.4);
     transition:0.3s;
-    cursor:pointer;
 }
 
 .card-block:hover{
     transform: translateY(-5px);
-    box-shadow: 0 0 25px rgba(0,247,255,0.3);
 }
 
 .card{
@@ -76,7 +69,6 @@ header p{
 
 .card h2{
     margin-bottom:10px;
-    color:#00f7ff;
 }
 
 /* Imagen cuadrada con bordes redondeados */
@@ -92,7 +84,6 @@ header p{
 @media(max-width:768px){
     .grid-container{
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
     }
     .card-block{
         flex-direction: column;
@@ -109,57 +100,68 @@ header p{
 <body>
 
 <header>
-    <h1>Profundiza tus Conocimientos</h1>
-    <p>Explora áreas para expandir tu aprendizaje y crecimiento profesional</p>
+    <h1>Acerca de mi</h1>
 </header>
 
 <div class="grid-container">
 
-    <!-- Programación -->
+    <!-- Fila 1: Datos Personales -->
     <div class="card-block">
         <div class="card">
-            <a href="programacion.html">
-                <h2>Programación</h2>
-                <p>Lenguajes, lógica y desarrollo</p>
+            <a href="datos.html">
+                <h2>Datos Personales</h2>
+                <p>Presiona para ver más</p>
             </a>
         </div>
-        <img src="images/programacion.png" alt="Programación" class="card-image">
+        <img src="images/datos.png" alt="Avatar Datos" class="card-image">
     </div>
 
-    <!-- Inteligencia Artificial -->
+    <!-- Fila 1: Idiomas -->
     <div class="card-block">
         <div class="card">
-            <a href="ia.html">
-                <h2>Inteligencia Artificial</h2>
-                <p>Machine Learning y modelos inteligentes</p>
+            <a href="idiomas.html">
+                <h2>Idiomas</h2>
+                <p>Presiona para ver más</p>
             </a>
         </div>
-        <img src="images/ia.png" alt="Inteligencia Artificial" class="card-image">
+        <img src="images/idiomas.png" alt="Avatar Idiomas" class="card-image">
     </div>
 
-    <!-- Linux y Redes -->
+    <!-- Fila 2: Cualidades -->
     <div class="card-block">
         <div class="card">
-            <a href="linux.html">
-                <h2>Linux & Redes</h2>
-                <p>Sistemas, servidores y seguridad</p>
+            <a href="cualidades.html">
+                <h2>Cualidades</h2>
+                <p>Presiona para ver más</p>
             </a>
         </div>
-        <img src="images/linux.png" alt="Linux y Redes" class="card-image">
+        <img src="images/cualidades.png" alt="Avatar Cualidades" class="card-image">
     </div>
 
-    <!-- Ciencia y Matemáticas -->
+    <!-- Fila 2: Proyecciones -->
     <div class="card-block">
         <div class="card">
-            <a href="ciencia.html">
-                <h2>Ciencia & Matemáticas</h2>
-                <p>Fundamentos para dominar la tecnología</p>
+            <a href="proyecciones.html">
+                <h2>Proyecciones</h2>
+                <p>Presiona para ver más</p>
             </a>
         </div>
-        <img src="images/ciencia.png" alt="Ciencia y Matemáticas" class="card-image">
+        <img src="images/proyecciones.png" alt="Avatar Proyecciones" class="card-image">
+    </div>
+
+    <!-- Nueva sección: Profundizar mis conocimientos -->
+    <div class="card-block">
+        <div class="card">
+            <a href="conocimientos.html">
+                <h2>Profundizar mis conocimientos</h2>
+                <p>Presiona para ver áreas donde quiero crecer</p>
+            </a>
+        </div>
+        <img src="images/conocimientos.png" alt="Avatar Conocimientos" class="card-image">
     </div>
 
 </div>
 
 </body>
 </html>
+```0
