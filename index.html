@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Acerca de mi</title>
+<title>Profundiza tus conocimientos</title>
 
 <style>
 *{
@@ -30,6 +30,11 @@ header h1{
     color:#00f7ff;
 }
 
+header p{
+    margin-top:10px;
+    color:#aaa;
+}
+
 /* Grid fijo de 2 filas x 2 columnas */
 .grid-container{
     display:grid;
@@ -49,10 +54,12 @@ header h1{
     overflow:hidden;
     box-shadow: 0 0 15px rgba(0,0,0,0.4);
     transition:0.3s;
+    cursor:pointer;
 }
 
 .card-block:hover{
     transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0,247,255,0.3);
 }
 
 .card{
@@ -69,13 +76,14 @@ header h1{
 
 .card h2{
     margin-bottom:10px;
+    color:#00f7ff;
 }
 
 /* Imagen cuadrada con bordes redondeados */
 .card-image{
     width:150px;
     height:150px;
-    border-radius:20px; /* esquinas redondeadas */
+    border-radius:20px;
     object-fit:cover;
     margin-left:20px;
 }
@@ -101,53 +109,54 @@ header h1{
 <body>
 
 <header>
-    <h1>Acerca de mi</h1>
+    <h1>Profundiza tus Conocimientos</h1>
+    <p>Explora áreas para expandir tu aprendizaje y crecimiento profesional</p>
 </header>
 
 <div class="grid-container">
 
-    <!-- Fila 1: Datos Personales -->
+    <!-- Programación -->
     <div class="card-block">
         <div class="card">
-            <a href="datos.html">
-                <h2>Datos Personales</h2>
-                <p>Presiona para ver más</p>
+            <a href="programacion.html">
+                <h2>Programación</h2>
+                <p>Lenguajes, lógica y desarrollo</p>
             </a>
         </div>
-        <img src="images/datos.png" alt="Avatar Datos" class="card-image">
+        <img src="images/programacion.png" alt="Programación" class="card-image">
     </div>
 
-    <!-- Fila 1: Idiomas -->
+    <!-- Inteligencia Artificial -->
     <div class="card-block">
         <div class="card">
-            <a href="idiomas.html">
-                <h2>Idiomas</h2>
-                <p>Presiona para ver más</p>
+            <a href="ia.html">
+                <h2>Inteligencia Artificial</h2>
+                <p>Machine Learning y modelos inteligentes</p>
             </a>
         </div>
-        <img src="images/idiomas.png" alt="Avatar Idiomas" class="card-image">
+        <img src="images/ia.png" alt="Inteligencia Artificial" class="card-image">
     </div>
 
-    <!-- Fila 2: Cualidades -->
+    <!-- Linux y Redes -->
     <div class="card-block">
         <div class="card">
-            <a href="cualidades.html">
-                <h2>Cualidades</h2>
-                <p>Presiona para ver más</p>
+            <a href="linux.html">
+                <h2>Linux & Redes</h2>
+                <p>Sistemas, servidores y seguridad</p>
             </a>
         </div>
-        <img src="images/cualidades.png" alt="Avatar Cualidades" class="card-image">
+        <img src="images/linux.png" alt="Linux y Redes" class="card-image">
     </div>
 
-    <!-- Fila 2: Proyecciones -->
+    <!-- Ciencia y Matemáticas -->
     <div class="card-block">
         <div class="card">
-            <a href="proyecciones.html">
-                <h2>Proyecciones</h2>
-                <p>Presiona para ver más</p>
+            <a href="ciencia.html">
+                <h2>Ciencia & Matemáticas</h2>
+                <p>Fundamentos para dominar la tecnología</p>
             </a>
         </div>
-        <img src="images/proyecciones.png" alt="Avatar Proyecciones" class="card-image">
+        <img src="images/ciencia.png" alt="Ciencia y Matemáticas" class="card-image">
     </div>
 
 </div>
