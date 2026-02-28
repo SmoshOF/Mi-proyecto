@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motivación — Ingeniería de Sistemas</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+
+body{
+  background: linear-gradient(135deg, #0b0f19, #121827);
+  color:white;
+  padding:40px 20px;
+}
+
+.container{
+  max-width:1000px;
+  margin:0 auto;
+  background: rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.10);
+  border-radius:20px;
+  padding:40px;
+  box-shadow:0 0 25px rgba(0,0,0,0.6);
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:16px;
+  margin-bottom:22px;
+}
+
+h1{
+  color:#00f7ff;
+  font-size:30px;
+  line-height:1.2;
+}
+
+.subtitle{
+  color:#b0b7c3;
+  margin-top:8px;
+}
+
+.btn{
+  text-decoration:none;
+  color:#00f7ff;
+  padding:10px 16px;
+  border-radius:12px;
+  background:rgba(0,247,255,0.12);
+  border:1px solid rgba(0,247,255,0.35);
+  transition:0.2s;
+  white-space:nowrap;
+}
+.btn:hover{transform:translateY(-2px); background:rgba(0,247,255,0.18);}
+
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:16px;
+  margin-top:18px;
+}
+
+.card{
+  background: rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.10);
+  border-radius:16px;
+  padding:22px;
+}
+
+.card h2{
+  color:#00f7ff;
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+p{color:#d7dbe3; line-height:1.6;}
+
+ul{margin-top:10px; padding-left:18px; color:#d7dbe3; line-height:1.8;}
+
+.quote{
+  grid-column:1/-1;
+  border-left:4px solid #00f7ff;
+  padding:18px 20px;
+  background: rgba(0,247,255,0.06);
+  border-radius:14px;
+  color:#e8fbff;
+  font-weight:700;
+  line-height:1.5;
+}
+
+.badges{margin-top:10px;}
+.badge{
+  display:inline-block;
+  margin:6px 8px 0 0;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.03);
+  color:#b0b7c3;
+  font-size:13px;
+}
+
+@media(max-width:900px){
+  header{flex-direction:column;}
+  .grid{grid-template-columns:1fr;}
+  .quote{grid-column:auto;}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+  <header>
+    <div>
+      <h1>Motivación para estudiar Ingeniería de Sistemas</h1>
+      <div class="subtitle">Mi enfoque: superación personal + tecnología + futuro profesional.</div>
+    </div>
+    <a class="btn" href="index.html">⬅ Volver</a>
+  </header>
+
+  <div class="grid">
+
+    <div class="card">
+      <h2>¿Quién me motiva?</h2>
+      <p>
+        Principalmente, <strong>yo mismo</strong>. Tomé la decisión investigando y entendiendo que
+        Ingeniería de Sistemas tiene un campo amplio y muchas ramas donde puedo crecer.
+      </p>
+      <p style="margin-top:10px;">
+        También me inspira <strong>un familiar por su esfuerzo</strong>, no necesariamente porque me haya recomendado la carrera,
+        sino por la disciplina y el ejemplo de superación.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>¿Qué me atrae de la carrera?</h2>
+      <ul>
+        <li><strong>Programación:</strong> crear soluciones reales con lógica y código.</li>
+        <li><strong>Inteligencia Artificial:</strong> aprender a usarla y entender sus límites (no es perfecta).</li>
+        <li><strong>Crear software:</strong> construir aplicaciones útiles y escalables.</li>
+        <li><strong>Resolver problemas:</strong> pensar, analizar y encontrar soluciones.</li>
+      </ul>
+      <div class="badges">
+        <span class="badge">Backend</span>
+        <span class="badge">IA</span>
+        <span class="badge">Software</span>
+        <span class="badge">Problemas</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Meta profesional</h2>
+      <p>
+        Mi meta inicial es <strong>trabajar en una empresa</strong> para ganar experiencia laboral real,
+        aprender en equipo y desarrollar habilidades profesionales.
+      </p>
+      <p style="margin-top:10px;">
+        A futuro, quiero <strong>desarrollar proyectos</strong> relacionados con software e IA.
+        Y si aparece una oportunidad, también estoy abierto a <strong>salir del país</strong>.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Mi mentalidad</h2>
+      <ul>
+        <li>Quiero <strong>superarme cada día</strong>.</li>
+        <li>Quiero <strong>demostrar que puedo lograrlo</strong>.</li>
+        <li><strong>La tecnología es el futuro</strong>, y quiero ser parte de ese cambio.</li>
+      </ul>
+    </div>
+
+    <div class="quote">
+      “Me motiva crecer, aprender y construir un futuro en tecnología. Quiero superarme cada día,
+      demostrar que puedo lograrlo, y aportar con soluciones reales en Ingeniería de Sistemas.”
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
