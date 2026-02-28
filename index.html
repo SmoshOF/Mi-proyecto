@@ -30,6 +30,11 @@ header h1{
     color:#00f7ff;
 }
 
+header p{
+    margin-top:10px;
+    color:#b0b7c3;
+}
+
 /* Grid adaptable (2 columnas, tantas filas como hagan falta) */
 .grid-container{
     display:grid;
@@ -49,10 +54,13 @@ header h1{
     overflow:hidden;
     box-shadow: 0 0 15px rgba(0,0,0,0.4);
     transition:0.3s;
+    border:1px solid rgba(255,255,255,0.10);
 }
 
 .card-block:hover{
     transform: translateY(-5px);
+    border-color: rgba(0,247,255,0.35);
+    box-shadow: 0 0 22px rgba(0,247,255,0.12);
 }
 
 .card{
@@ -69,6 +77,11 @@ header h1{
 
 .card h2{
     margin-bottom:10px;
+    color:#00f7ff;
+}
+
+.card p{
+    color:#b0b7c3;
 }
 
 /* Imagen cuadrada con bordes redondeados */
@@ -100,12 +113,24 @@ header h1{
 <body>
 
 <header>
-    <h1>Acerca de mi</h1>
+    <h1>Acerca de mí</h1>
+    <p>Selecciona un apartado para ver más información</p>
 </header>
 
 <div class="grid-container">
 
-    <!-- Fila 1: Datos Personales -->
+    <!-- Perfil / Foto -->
+    <div class="card-block">
+        <div class="card">
+            <a href="perfil.html">
+                <h2>Perfil (Foto)</h2>
+                <p>Presiona para ver mi foto y presentación</p>
+            </a>
+        </div>
+        <img src="images/perfil.png" alt="Foto de perfil" class="card-image">
+    </div>
+
+    <!-- Datos Personales -->
     <div class="card-block">
         <div class="card">
             <a href="datos.html">
@@ -116,7 +141,7 @@ header h1{
         <img src="images/datos.png" alt="Avatar Datos" class="card-image">
     </div>
 
-    <!-- Fila 1: Idiomas -->
+    <!-- Idiomas -->
     <div class="card-block">
         <div class="card">
             <a href="idiomas.html">
@@ -127,7 +152,7 @@ header h1{
         <img src="images/idiomas.png" alt="Avatar Idiomas" class="card-image">
     </div>
 
-    <!-- Fila 2: Cualidades -->
+    <!-- Cualidades -->
     <div class="card-block">
         <div class="card">
             <a href="cualidades.html">
@@ -138,7 +163,7 @@ header h1{
         <img src="images/cualidades.png" alt="Avatar Cualidades" class="card-image">
     </div>
 
-    <!-- Fila 2: Proyecciones -->
+    <!-- Proyecciones -->
     <div class="card-block">
         <div class="card">
             <a href="proyecciones.html">
@@ -149,7 +174,7 @@ header h1{
         <img src="images/proyecciones.png" alt="Avatar Proyecciones" class="card-image">
     </div>
 
-    <!-- Nueva sección: Profundizar mis conocimientos -->
+    <!-- Profundizar mis conocimientos -->
     <div class="card-block">
         <div class="card">
             <a href="conocimientos.html">
@@ -158,6 +183,17 @@ header h1{
             </a>
         </div>
         <img src="images/conocimientos.png" alt="Avatar Conocimientos" class="card-image">
+    </div>
+
+    <!-- Motivación (nuevo) -->
+    <div class="card-block">
+        <div class="card">
+            <a href="motivo.html">
+                <h2>Motivación</h2>
+                <p>Por qué elegí Ingeniería de Sistemas</p>
+            </a>
+        </div>
+        <img src="images/motivacion.png" alt="Avatar Motivación" class="card-image">
     </div>
 
 </div>
