@@ -35,7 +35,6 @@ header p{
     color:#b0b7c3;
 }
 
-/* Grid adaptable (2 columnas, tantas filas como hagan falta) */
 .grid-container{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
@@ -46,7 +45,6 @@ header p{
     grid-auto-rows:auto;
 }
 
-/* Cada bloque tarjeta + imagen */
 .card-block{
     display:flex;
     background: rgba(255,255,255,0.05);
@@ -84,7 +82,6 @@ header p{
     color:#b0b7c3;
 }
 
-/* Imagen cuadrada con bordes redondeados */
 .card-image{
     width:150px;
     height:150px;
@@ -93,7 +90,6 @@ header p{
     margin-left:20px;
 }
 
-/* Responsive para celular */
 @media(max-width:768px){
     .grid-container{
         grid-template-columns: 1fr;
@@ -118,7 +114,6 @@ header p{
 </header>
 
 <div class="grid-container">
-    </div>
 
     <!-- Datos Personales -->
     <div class="card-block">
@@ -175,7 +170,7 @@ header p{
         <img src="images/conocimientos.png" alt="Avatar Conocimientos" class="card-image">
     </div>
 
-    <!-- Motivación (nuevo) -->
+    <!-- Motivación -->
     <div class="card-block">
         <div class="card">
             <a href="motivo.html">
